@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-image: url("mars.gif");
+		background-position: center;
+		background-size: cover;
+	}
+	#myCanvas
+	{
+		margin-top: 30px;
+		border-width:10px;
+		background-color: white; 
+		border-style:ridge;
+	}
+
+	h1,h4
+	{
+		color: white !important;
+	}
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<title>Rover on Mars</title>
+</head>
+
+<!--1. Add <body onload="add();"> to load the canvas -->
+	<body onload="add();" >
+ 
+	
+<center>
+<h1>Move the Rover on Mars</h1>
+
+	<!-- 2. Set a bootstrap class to highlight the text in a red color-->
+	<h4 class="btn btn-warning"> Instructions: Press the arrow keys to move the rover </h4>	
+
+<br>
+
+	<!-- 3. Add a canvas with a size of width:800px and height:600px-->
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
